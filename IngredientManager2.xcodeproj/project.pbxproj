@@ -7,19 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CA7242972593D8900094731F /* Purchase.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7242912593D8900094731F /* Purchase.swift */; };
+		CA7242992593D8900094731F /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7242932593D8900094731F /* Ingredient.swift */; };
+		CA72429B2593D8900094731F /* Supplier.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7242952593D8900094731F /* Supplier.swift */; };
+		CA7242AC2593EFFD0094731F /* Cards.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7242AB2593EFFD0094731F /* Cards.swift */; };
 		CABDDA57258E8E750031B448 /* IngredientManager2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABDDA56258E8E750031B448 /* IngredientManager2App.swift */; };
 		CABDDA59258E8E750031B448 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABDDA58258E8E750031B448 /* ContentView.swift */; };
 		CABDDA5B258E8E760031B448 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CABDDA5A258E8E760031B448 /* Assets.xcassets */; };
 		CABDDA5E258E8E760031B448 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CABDDA5D258E8E760031B448 /* Preview Assets.xcassets */; };
+		CABDDA6E258E98310031B448 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CABDDA6C258E98310031B448 /* Model.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CA7242912593D8900094731F /* Purchase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Purchase.swift; sourceTree = SOURCE_ROOT; };
+		CA7242932593D8900094731F /* Ingredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ingredient.swift; sourceTree = SOURCE_ROOT; };
+		CA7242952593D8900094731F /* Supplier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Supplier.swift; sourceTree = SOURCE_ROOT; };
+		CA7242AB2593EFFD0094731F /* Cards.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Cards.swift; path = ../../../../Downloads/Cards.swift; sourceTree = "<group>"; };
 		CABDDA53258E8E750031B448 /* IngredientManager2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IngredientManager2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CABDDA56258E8E750031B448 /* IngredientManager2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientManager2App.swift; sourceTree = "<group>"; };
 		CABDDA58258E8E750031B448 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CABDDA5A258E8E760031B448 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CABDDA5D258E8E760031B448 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CABDDA5F258E8E760031B448 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CABDDA6D258E98310031B448 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +63,10 @@
 			isa = PBXGroup;
 			children = (
 				CABDDA56258E8E750031B448 /* IngredientManager2App.swift */,
-				CABDDA58258E8E750031B448 /* ContentView.swift */,
+				CABDDA6A258E8FFE0031B448 /* Data */,
+				CABDDA69258E8F710031B448 /* Views */,
+				CABDDA67258E8F690031B448 /* DataModel */,
+				CABDDA66258E8F190031B448 /* ViewModel */,
 				CABDDA5A258E8E760031B448 /* Assets.xcassets */,
 				CABDDA5F258E8E760031B448 /* Info.plist */,
 				CABDDA5C258E8E760031B448 /* Preview Content */,
@@ -67,6 +80,40 @@
 				CABDDA5D258E8E760031B448 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CABDDA66258E8F190031B448 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CABDDA67258E8F690031B448 /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				CA7242912593D8900094731F /* Purchase.swift */,
+				CA7242932593D8900094731F /* Ingredient.swift */,
+				CA7242952593D8900094731F /* Supplier.swift */,
+				CABDDA6C258E98310031B448 /* Model.xcdatamodeld */,
+			);
+			path = DataModel;
+			sourceTree = "<group>";
+		};
+		CABDDA69258E8F710031B448 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CA7242AB2593EFFD0094731F /* Cards.swift */,
+				CABDDA58258E8E750031B448 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CABDDA6A258E8FFE0031B448 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,7 +186,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				CABDDA59258E8E750031B448 /* ContentView.swift in Sources */,
+				CA7242992593D8900094731F /* Ingredient.swift in Sources */,
 				CABDDA57258E8E750031B448 /* IngredientManager2App.swift in Sources */,
+				CA7242AC2593EFFD0094731F /* Cards.swift in Sources */,
+				CA7242972593D8900094731F /* Purchase.swift in Sources */,
+				CABDDA6E258E98310031B448 /* Model.xcdatamodeld in Sources */,
+				CA72429B2593D8900094731F /* Supplier.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,6 +380,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CABDDA6C258E98310031B448 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CABDDA6D258E98310031B448 /* Model.xcdatamodel */,
+			);
+			currentVersion = CABDDA6D258E98310031B448 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = CABDDA4B258E8E750031B448 /* Project object */;
 }
